@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Factors
+    {
+        static void Main(string[] args)
+        {
+            Factors f = new Factors();
+            Console.WriteLine(f.FactorsofNumber(12));
+        }
+        public string FactorsofNumber(int num)
+        {
+            string str = string.Empty;
+            for(int i=1;i<=num;i++)
+            {
+                if(num%i==0)
+                {
+                    str = str + i + "\n";
+                }
+            }
+            return str;
+        }
+    }
+}
