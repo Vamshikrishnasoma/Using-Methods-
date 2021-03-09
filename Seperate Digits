@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class MseperateDigits
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(SeperateDigit(7764));
+        }
+        public static string SeperateDigit(int num)
+        {
+            string str = String.Empty;
+            while(num!=0)
+            {
+                int digit = num % 10;
+                str = str + digit+"\n";
+                num /= 10;
+            }
+            return str;
+        }
+    }
+}
